@@ -10,7 +10,7 @@ OINK Starter 是一个 Hugo Module 站点。Git 下载源码，Go 解析锁定�
 
 ## 前置条件 {#prerequisites}
 
-安装 Git、Go 1.27.3 或更新版本，以及 Hugo Extended 0.168.0 或更新版本。`hugo version` 输出中必须包含 `extended`。
+安装 Git、Go 1.27.4 或更新版本，以及 Hugo 0.169.0 或更新版本（不限 edition，无需 Sass 编译器）。
 
 ## 三条命令 {#three-commands}
 

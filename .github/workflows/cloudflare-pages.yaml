@@ -14,8 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  GO_VERSION: 1.27.3
-  HUGO_VERSION: "0.168.0"
+  GO_VERSION: 1.27.4
   GOWORK: off
   HUGO_MODULE_WORKSPACE: off
   HUGO_CACHEDIR: ${{ github.workspace }}/.hugo_cache
@@ -41,11 +40,10 @@ jobs:
           check-latest: true
           cache-dependency-path: go.sum
 
-      - name: Install Hugo Extended
+      - name: Install Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true
+          hugo-version: latest
 
       - name: Record build tool versions
         run: |

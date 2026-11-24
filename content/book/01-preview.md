@@ -10,7 +10,7 @@ OINK Starter is a Hugo Module site. Git downloads the source, Go resolves the pi
 
 ## Prerequisites {#prerequisites}
 
-Install Git, Go 1.27.3 or newer, and Hugo Extended 0.168.0 or newer. The word `extended` must appear in `hugo version`.
+Install Git, Go 1.27.4 or newer, and Hugo 0.169.0 or newer (any edition; no Sass compiler is required).
 
 ## Three commands {#three-commands}
 

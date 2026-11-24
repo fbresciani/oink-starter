@@ -14,7 +14,7 @@ cd YOUR-REPOSITORY
 hugo server
 ```
 
-Open <http://localhost:1313/>. The first run downloads the pinned OINK Hugo Module (`v1.5.1`). You only need Git, Go 1.27.3 or newer, and Hugo Extended 0.168.0 or newer — no external Sass, Node.js, or npm installation is required.
+Open <http://localhost:1313/>. The first run downloads the pinned OINK Hugo Module (`v1.6.0`). You only need Git, Go 1.27.4 or newer, and Hugo 0.169.0 or newer (any edition) — no Sass compiler, Node.js, or npm installation is required.
 
 Cloning this original template is also exactly three commands:
 
@@ -80,14 +80,14 @@ hugo --cleanDestinationDir --gc --minify --environment production \
   --printPathWarnings
 ```
 
-Generated `public/`, `resources/`, and caches are ignored by Git. Because Hugo uses its built-in LibSass compiler, the upstream LibSass deprecation warning is expected — keep warnings visible for review, and do not enable `--panicOnWarning` or `HUGO_PANICONWARNING`.
+Generated `public/`, `resources/`, and caches are ignored by Git. OINK 1.6.0 uses plain CSS with no Sass compiler; keep warnings visible for review, and do not enable `--panicOnWarning` or `HUGO_PANICONWARNING`.
 
 ## GitHub Pages
 
 1. Open **Settings → Pages** and choose **GitHub Actions** as the source.
 2. Push `main`, or run **Deploy to GitHub Pages** manually from the Actions tab.
 
-`.github/workflows/github-pages.yaml` installs Go 1.27.3 and Hugo Extended 0.168.0, performs a production build, calculates the correct GitHub project subpath, and publishes the artifact through the Pages deployment API.
+`.github/workflows/github-pages.yaml` installs Go 1.27.4 and the current Hugo release (any edition), performs a production build, calculates the correct GitHub project subpath, and publishes the artifact through the Pages deployment API.
 
 ## Cloudflare Pages
 
